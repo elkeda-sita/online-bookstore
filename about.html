@@ -3,88 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Title================================-->
     <title>Libra Online</title>
-    <!--CSS================================-->
+
     <link rel="stylesheet" href="style.css"/>
-    <!--Fav Icon================================-->
-    <link rel="shortcut icon" href="img/rosse.PNG"/>
-    <!--FontAwesome-for-Icons================================-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/> 
-    <!--Poppins-font================================-->
+
+    <link rel="shortcut icon" href="images/rosse.PNG"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
 </head>
 <body>
-    <!--Navigation================================-->
+
     <nav class="navigation">
-        <!--****Logo***************-->
-        <a href="index.html" class="logo">
-           
-        </a>
-         <!--****Search***************-->
-     <form class="search-box">
-        <input type="text" placeholder="Search Product Here" required/>
-        <button>
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-     </form>
-     
-     <div class="navbar">
-        <a class="active" href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="#about">About</a>
-      </div>
+        <a href="index.html" class="logo"></a>
 
+        <form class="search-box">
+            <input type="text" placeholder="Search Product Here" required />
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
 
-         <!--****btns***************-->
-         <div class="nav-btns">
-         <!--***user***************-->
-         <a href="user.html" cass="nav-user">
-            <i class="fa-regular fa-user"></i>
-        </a>
-        <!--***cart***************-->
-        <a href="#" cass="nav-cart">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </a>
-         </div>
+        <div class="navbar">
+            <a class="active" href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+        </div>
+
+        <div class="nav-btns">
+            <a href="user.html" class="nav-user">
+                <i class="fa-regular fa-user"></i>
+            </a>
+
+            <a href="#" class="nav-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
     </nav>
 
     <div class="carousel-container">
-        <!-- Carousel slides -->
         <div class="carousel-slide">
-        <img src="img/abou.png"  width="950" height="500" class="center2" >
+            <img src="images/abou.png" width="950" height="500" class="center2" alt="About image">
         </div>
+
         <div class="carousel-slide">
-          <<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.820543577443!2d19.81385387485684!3d41.33451549927494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350310db0518c2f%3A0x66adc753e7cc308!2sFaculty%20of%20Natural%20Sciences!5e0!3m2!1sen!2s!4v1715883411029!5m2!1sen!2s" width="1300" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> alt="Slide 3">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.820543577443!2d19.81385387485684!3d41.33451549927494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1350310db0518c2f%3A0x66adc753e7cc308!2sFaculty%20of%20Natural%20Sciences!5e0!3m2!1sen!2s!4v1715883411029!5m2!1sen!2s"
+                width="1300"
+                height="600"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
         </div>
-      
-        <!-- Navigation buttons -->
+
         <a class="carousel-btn prev" onclick="changeSlide(-1)">&#10094;</a>
         <a class="carousel-btn next" onclick="changeSlide(1)">&#10095;</a>
-      </div>
-      
-      <script>
-        var slideIndex = 1;
+    </div>
+
+    <script>
+        let slideIndex = 1;
         showSlide(slideIndex);
-      
+
         function changeSlide(n) {
-          showSlide(slideIndex += n);
+            showSlide(slideIndex += n);
         }
-      
+
         function showSlide(n) {
-          var slides = document.getElementsByClassName("carousel-slide");
-          if (n > slides.length) { slideIndex = 1 }
-          if (n < 1) { slideIndex = slides.length }
-          for (var i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-          }
-          slides[slideIndex - 1].style.display = "block";
+            const slides = document.getElementsByClassName("carousel-slide");
+
+            if (n > slides.length) {
+                slideIndex = 1;
+            }
+
+            if (n < 1) {
+                slideIndex = slides.length;
+            }
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[slideIndex - 1].style.display = "block";
         }
-      </script>
-
-
+    </script>
 
 </body>
+</html>
