@@ -3,101 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Title================================-->
     <title>Product Page</title>
-    <!--CSS================================-->
+
     <link rel="stylesheet" href="style.css"/>
-    <!--Fav Icon================================-->
-    <link rel="shortcut icon" href="img/rosse.PNG"/>
-    <!--FontAwesome-for-Icons================================-->
+    <link rel="shortcut icon" href="images/rosse.PNG"/>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/> 
-    <!--Poppins-font================================-->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
 </head>
 <body>
-    <!--Navigation================================-->
+
     <nav class="navigation">
-        <!--****Logo***************-->
         <a href="index.html" class="logo">
-            <img src="img/rosse.PNG"/>
+            <img src="images/rosse.PNG" alt="Kedi's Books Logo"/>
         </a>
-         <!--****Search***************-->
-     <form class="search-box">
-        <input type="text" placeholder="Search Product Here" required/>
-        <button>
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </button>
-     </form>
 
-     <div class="navbar">
-        <a class="active" href="#home">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="about.html">About</a>
-      </div>
+        <form class="search-box">
+            <input type="text" placeholder="Search Product Here" required/>
+            <button type="submit">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
 
-         <!--****btns***************-->
-         <div class="nav-btns">
-         <!--***user***************-->
-         <a href="user.html" cass="nav-user">
-            <i class="fa-regular fa-user"></i>
-        </a>
-        <!--***cart***************-->
-        <a href="#" cass="nav-cart">
-            <i class="fa-solid fa-cart-shopping"></i>
-        </a>
-         </div>
-    </nav>
-
-    <!--==product-page==========-->
-    <section id="product_details">
-
-        <!--img-->
-        <div class="d-product-img">
-            <img src="img/amelia-vajza-qe-nuk-do-te-ekzistonte-1.jpg" />
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
         </div>
 
-        <!--text-->
+        <div class="nav-btns">
+            <a href="user.html" class="nav-user">
+                <i class="fa-regular fa-user"></i>
+            </a>
+            <a href="#" class="nav-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+    </nav>
+
+    <section id="product_details">
+        <div class="d-product-img">
+            <img src="images/amelia-vajza-qe-nuk-do-te-ekzistonte-1.jpg" alt="Amelia: Vajza Që Nuk Do Të Ekzistonte" />
+        </div>
+
         <div class="d-product-text">
-            <!--category-->
-            <span class="product-grid">Në Ofertë > Mister</span>
-            <!--title-->
+            <span class="category">Në Ofertë &gt; Mister</span>
+
             <strong>Amelia: Vajza Që Nuk Do Të Ekzistonte</strong>
-            <!--rating-->
+
             <span class="rating">
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <span>120 Review's</span>
+                <span>120 Reviews</span>
             </span>
-            <!--details-->
+
             <p>Gjatë një vizite në Gjermani, Rakela Krameri merr një letër të mistershme nga një mikeshë e vjetër, me të cilën nuk fliste prej kohësh. E martuar me Gerhard Shlikun, një oficer i SS-ve, Kristina vë re se ngjarjet në Gjermani po marrin një drejtim të paparashikueshëm dhe është e tmerruar, sepse i shoqi e konsideron vajzën e tyre, Amelinë, që ka lindur e shurdhër, një njollë turpi për prejardhjen e tij ariane.</p>
-            <!--price-->
-            <span class="price">1300L<del>780L</del></span>
-            <!--quantity-->
+
+            <span class="price">1300L <del>780L</del></span>
+
             <div class="quantity">
                 <span>Quantity</span>
                 <input type="number" min="1" value="1">
             </div>
-            <!--add-to-cart-->
+
             <a href="#" class="add-cart-btn">Add To Cart</a>
         </div>
     </section>
 
-    <!--footer=====================-->
     <footer>
         <div class="footer-container">
-            <!--**company-box********************-->
             <div class="footer-company-box">
-                <!--logo-->
-                <a href="#" class="footer-logo">Logo</a>
-                <!--details-->
-                <p>efhwhbjvjv</p>
-                <!--social-->
+                <a href="index.html" class="footer-logo">Kedi's Books</a>
+                <p>“Kaq shumë libra, kaq pak kohë.”</p>
+
                 <div class="footer-social">
                     <a href="#"><i class="fa-brands fa-facebook"></i></a>
                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -106,74 +90,40 @@
                 </div>
             </div>
 
-            <!--**link-box**********-->
             <div class="footer-link-box">
-                <strong>Main Link's</strong>
+                <strong>Main Links</strong>
                 <ul>
-                    <li><a href="#">Our Product's</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Disclaimer</a></li>
-                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
 
-                <!--**link-box**********-->
-                <div class="footer-link-box">
-                    <strong>Main Link's</strong>
-                    <ul>
-                        <li><a href="#">Our Product's</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Disclaimer</a></li>
-                        <li><a href="#">Terms and Conditions</a></li>
-                    </ul>
-                </div>
-
-                    <!--**link-box**********-->
             <div class="footer-link-box">
-                <strong>Main Link's</strong>
+                <strong>Categories</strong>
                 <ul>
-                    <li><a href="#">Our Product's</a></li>
+                    <li><a href="#">Klasikë</a></li>
+                    <li><a href="#">Romancë</a></li>
+                    <li><a href="#">Mister</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-link-box">
+                <strong>Information</strong>
+                <ul>
                     <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Disclaimer</a></li>
                     <li><a href="#">Terms and Conditions</a></li>
                 </ul>
             </div>
         </div>
 
-        <!---**bottom**************-->
         <div class="footer-bottom">
-            <span class="footer-owner">Made By Going To Internet</span>
-            <span class="copyright">© Copyright 2024 - Going To Internet</span>
+            <span class="footer-owner">Made by Elkeda Sita</span>
+            <span class="copyright">© Copyright 2024 - Elkeda Sita</span>
         </div>
     </footer>
 
-    <!--====jquery===============-->
-    <script src="js/jquery-3.7.1.js"></script>
-
-<!--====script===============-->
-<script>
-    /*filter-link-active********************/
-    var selector = '.new-p-heading li';
-
-    $(selector).on('click',function(){
-        $(selector).removeClass('active')
-        $(this).addClass('active')
-    });
-    /*-box-filter-----------*/
-    $(document).ready(function(){
-        $('.new-p-heading li').click(function(){
-            const value = $(this).attr('data-filter');
-            if(value == 'all'){
-                $('.new-product-box').show('1000');
-            }
-            else{
-                $('.new-product-box').not('.'+value).hide('1000');
-                $('.new-product-box').filter('.'+value).show('1000');
-            }
-        });
-    });
-    
-    </script>
-
+    <script src="jquery-3.7.1.js"></script>
 
 </body>
+</html>
