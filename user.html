@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Title================================-->
+    <title>Kedi's Books</title>
+    <!--CSS================================-->
+    <link rel="stylesheet" href="style.css"/>
+    <!--Fav Icon================================-->
+    <link rel="shortcut icon" href="img/rosse.PNG"/>
+    <!--FontAwesome-for-Icons================================-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/> 
+    <!--Poppins-font================================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--Navigation================================-->
+    <nav class="navigation">
+        <!--****Logo***************-->
+        <a href="index.html" class="logo">
+            <img src="img/rosse.PNG"/>
+        </a>
+         <!--****Search***************-->
+     <form class="search-box">
+        <input type="text" placeholder="Search Product Here" required/>
+        <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+     </form>
+     
+<div class="navbar">
+    <a class="active" href="index.html">Home</a>
+    <a href="#contact">Contact</a>
+    <a href="about.html">About</a>
+  </div>
+
+
+         <!--****btns***************-->
+         <div class="nav-btns">
+         <!--***user***************-->
+         <a href="#" cass="nav-user">
+            <i class="fa-regular fa-user"></i>
+        </a>
+        <!--***cart***************-->
+        <a href="#" cass="nav-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+         </div>
+    </nav>
+
+    <form action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <img src="images/rosse.PNG" alt="Avatar" class="avatar">
+      </div>
+    
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+    
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+            
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+    
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </div>
+    </form>
+   </body>
